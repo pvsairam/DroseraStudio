@@ -1,0 +1,134 @@
+# Design References for “Drosera Studio” Dashboard  
+*(Sleek • Futuristic • Fluid • Configuration-Driven)*
+
+## 1. Design Philosophy & Core Principles  
+- Prioritize clarity and purpose: the dashboard should present meaningful data at a glance, avoiding clutter.  
+- Motion matters: use subtle transitions, fluid movement, and micro-interactions (hover lifts, card transitions, streaming updates) to convey *alive* UX.  
+- Depth & material: respect elevation, shadows, and motion layering.  
+- Configuration-first: every UI element (menus, pages, components, data sources) must be dynamically generated via configuration.  
+- Typography & spacing: generous whitespace, clear hierarchy, modern sans-serif fonts.  
+- Accessibility & performance: WCAG AA, keyboard navigation, reduced-motion support, efficient rendering.  
+- Visual language: customised, premium, and non-templated.  
+
+---
+
+## 2. Design Inspirations  
+
+### 2.1 Classic High-Craft Dashboards  
+- **Stripe Dashboard** – Clean grid, minimal colour, strong hierarchy.  
+  ![Stripe Dashboard](https://agencyanalytics.com/_next/image?q=75&url=https%3A%2F%2Fimages.ctfassets.net%2Fdfcvkz6j859j%2F3NtTumDDAAvscAP4KC0d4J%2Ff5ce0ed4c7c1824c3f5b77bd44c42023%2FStripe-Dashboard-Template-Example.png&w=3840)
+- **Linear.app** – Ultra-minimal with sharp motion.  
+  ![Linear App](https://cdn.dribbble.com/userupload/15813489/file/original-9784c3910b8ae034233dc1730426afbd.jpeg?resize=400x0)
+- **Vercel Dashboard** – Developer clarity, dark theme precision.  
+  ![Vercel Dashboard](https://cdn.prod.website-files.com/5efb0b7816032fd33ce6059c/62d5bbd6d01ba2d84d85e91f_Screen%20Shot%202021-10-07%20at%2012.36%20%281%29.png)
+- **Notion & Material 3 Hybrids** – Balanced whitespace and motion.  
+
+---
+
+### 2.2 Modern Web3 / Data Dashboards  
+- **Crypto Operations Hub** – Real-time data, fluid charts, live feeds.  
+  ![Crypto Hub](https://multipurposethemes.com/wp-content/uploads/2024/11/crypto-operations-hub-monitor-analyze-optimize.jpg)
+- **DeFi Monitor Concepts** – Strong contrast, live metrics, minimalist typography.  
+  ![DeFi Monitor](https://cdn.dribbble.com/userupload/45052668/file/29ef4aeacf4768c74013af0667d375eb.png?resize=752x&vertical=center)
+- **Analytics Labs (Dribbble)** – Smooth animations, card grids, high-end feel.  
+  ![Analytics Dashboard](https://cdn.dribbble.com/userupload/18108448/file/original-931837609d86db894c53df3fa27e4074.png?crop=0x0-3199x2399&format=webp&resize=400x300&vertical=center)
+
+---
+
+## 3. Design Tokens & Theme Guide  
+
+### Colours  
+| Role | Colour |
+|------|---------|
+| Primary | `#00A3FF` |
+| Secondary | `#FF8A00` |
+| Success | `#2ECC71` |
+| Warning | `#F1C40F` |
+| Critical | `#E74C3C` |
+| Neutral Dark BG | `#121212` |
+| Neutral Light BG | `#FAFAFA` |
+
+### Typography  
+- Font: **Inter** or **IBM Plex Sans**  
+- Headings: SemiBold 24–32px  
+- Body: Regular 16px  
+- Captions: 14px  
+- Line Height: 1.5  
+- Use uppercase and spaced tracking for metrics (e.g. KPIs).
+
+### Spacing & Layout  
+- Base unit: 8px grid.  
+- Radius: 12px.  
+- Shadow: `0 4px 16px rgba(0,0,0,0.08)`  
+- Grid: 12-col desktop, 6-col tablet, 1-col mobile.  
+
+### Motion & Animation  
+- Use **Framer Motion** spring physics (`stiffness:120, damping:14`).  
+- Page transition: fade-slide up (`opacity 0→1`, `y +20px→0`).  
+- Card hover: scale `1.02`, deepen shadow.  
+- Live feed ticker: horizontal scroll, pause on hover.  
+- Charts load in staggered opacity sequence (100 ms intervals).  
+
+---
+
+## 4. Layout Hierarchy  
+
+### **Header**
+Top bar with logo, time range selector, mode toggle, and avatar.
+
+### **Sidebar**
+Left navigation generated dynamically from configuration (icons + labels).
+
+### **Overview Page**
+| Row | Components |
+|------|-------------|
+| 1 | Four KPI cards (Total Traps, Active Chains, Triggered Today, Avg Response Time) |
+| 2 | Timeseries chart + Donut of trap types |
+| 3 | Event feed (live) + status table (sortable, filterable) |
+
+### **Admin Pages**
+| Config | Description |
+|---------|--------------|
+| Menus | Add/edit navigation and roles |
+| Pages | Configure components & layouts |
+| Data Sources | On-chain, REST, static JSON |
+| Trap Types | Create and categorize traps |
+| Alerts | Define triggers and notifications |
+| Appearance | Theme, spacing, typography |
+| Roles | Manage access |
+| Integrations | RPCs, APIs, credentials |
+
+---
+
+## 5. Accessibility & Performance  
+- Full keyboard navigation  
+- Focus ring with 3:1 contrast  
+- Aria-live for event feed  
+- Lazy load heavy components  
+- Target LCP < 2.5 s  
+- Reduce motion setting respected  
+
+---
+
+## 6. Animation Inspirations  
+- [Framer Motion Showcase](https://www.framer.com/motion/)  
+- [Stripe Dashboard Motion Studies](https://stripe.com/blog/designing-animations)  
+- [Linear’s Interface Motion](https://linear.app/)  
+
+---
+
+## 7. Avoid  
+- Neon overuse or gradients without context.  
+- Unnecessary 3D parallax.  
+- Overcrowded tables.  
+- Too many bright accent colours.  
+- Long transition delays.  
+
+---
+
+## 8. Summary  
+Your design should feel like a living system — fluid, calm, and precise.  
+Every animation and color must serve clarity.  
+The configuration-driven interface must empower rather than overwhelm.
+
+---

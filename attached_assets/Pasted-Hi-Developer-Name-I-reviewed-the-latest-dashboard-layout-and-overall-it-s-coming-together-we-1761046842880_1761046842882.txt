@@ -1,0 +1,32 @@
+Hi [Developer Name],
+
+I reviewed the latest dashboard layout, and overall, it’s coming together well — the data cards and event feed look structured. However, the visual balance and spacing between components can be improved for better alignment and readability.
+
+Here are the key points to adjust:
+
+1. **Layout Alignment:**  
+   The “Live Event Feed” and “Status Overview” sections at the bottom should ideally share the same horizontal row and maintain balanced proportions.  
+   Currently, the “Status Overview” table looks compressed to the right, while there’s noticeable empty space on the left.  
+   Please make both sections occupy roughly 50–50% of the width, or let them dynamically resize based on table content.
+
+2. **Top Charts Area:**  
+   The sections “Trap Events by Severity” and “Trap Types Distribution” seem to have excess white space or missing charts.  
+   Please ensure that the donut and other chart components are rendered correctly and aligned within their grid cells.
+
+3. **Responsive Behavior:**  
+   The entire layout should remain responsive:
+   - On desktop screens, maintain a two-column view for the lower tables (Event Feed and Status Overview).
+   - On smaller screens, stack them vertically with consistent padding and spacing.
+
+4. **Consistent Spacing and Padding:**  
+   Make sure each card and chart maintains the same horizontal and vertical padding for a clean, uniform look.  
+   Avoid large white gaps between sections, especially between the top metrics row and the charts row.
+
+5. **Grid Consistency:**  
+   The dashboard should follow a uniform grid system so that every element (metrics cards, charts, and tables) aligns perfectly across the page — both horizontally and vertically.
+
+6. **Visual Hierarchy:**  
+   The metric cards on top (Total Traps, Active Chains, Triggered Today, etc.) look great.  
+   Just ensure consistent height and spacing between them, and that the row below (charts) aligns cleanly under them.
+
+In short, the goal is to make the dashboard look visually balanced, with even horizontal alignment, no wasted space on the left, and properly rendered charts at the top. Once adjusted, the layout will feel much more cohesive and professional.

@@ -1,0 +1,276 @@
+2025-10-22T08:56:41.000000000Z [inf]  Starting Container
+2025-10-22T08:56:42.359560546Z [inf]  
+2025-10-22T08:56:42.359574166Z [inf]  ✓ API routes registered
+2025-10-22T08:56:42.359582135Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:56:42.359589621Z [inf]  8:56:42 AM [express] serving on port 8080
+2025-10-22T08:56:42.359667610Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:56:42.359674001Z [inf]  
+2025-10-22T08:56:42.359682636Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:56:42.359689271Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:56:44.359506676Z [err]  
+2025-10-22T08:56:44.359517344Z [err]  Node.js v18.20.5
+2025-10-22T08:56:44.359524121Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:56:44.359533354Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:56:44.359534956Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:56:44.359542743Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:56:44.359543107Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:56:44.359550129Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:56:44.359550271Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:56:44.359553746Z [err]           ^
+2025-10-22T08:56:44.359559974Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:56:44.359562670Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:56:44.359564099Z [err]  
+2025-10-22T08:56:44.359570256Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:56:44.359575029Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:56:44.359579563Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:56:44.359584647Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:56:45.442351739Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:56:45.466529657Z [inf]  
+2025-10-22T08:56:45.466537712Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:56:45.466545719Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:56:45.466553914Z [inf]  
+2025-10-22T08:56:46.416282281Z [inf]  ✓ API routes registered
+2025-10-22T08:56:46.416289126Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:56:46.416296820Z [inf]  8:56:46 AM [express] serving on port 8080
+2025-10-22T08:56:48.423255279Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:56:48.423261546Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:56:48.423269074Z [err]           ^
+2025-10-22T08:56:48.423277158Z [err]  
+2025-10-22T08:56:48.423285334Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:56:48.423294436Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:56:48.423302786Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:56:48.423313710Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:56:48.423321000Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:56:48.423328640Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:56:48.423341297Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:56:48.423351338Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:56:48.423361951Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:56:48.423369159Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:56:48.423375392Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:56:48.423381236Z [err]  
+2025-10-22T08:56:48.423387825Z [err]  Node.js v18.20.5
+2025-10-22T08:56:49.514036435Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:56:49.541403091Z [inf]  
+2025-10-22T08:56:49.541412806Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:56:49.541418882Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:56:49.541425705Z [inf]  
+2025-10-22T08:56:50.306934674Z [inf]  8:56:50 AM [express] serving on port 8080
+2025-10-22T08:56:50.307096369Z [inf]  ✓ API routes registered
+2025-10-22T08:56:50.307105304Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:56:56.664535705Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:56:56.664541303Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:56:56.664546417Z [err]           ^
+2025-10-22T08:56:56.664552757Z [err]  
+2025-10-22T08:56:56.664559395Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:56:56.664564685Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:56:56.664569457Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:56:56.664574452Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:56:56.664578914Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:56:56.664583515Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:56:56.664588404Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:56:56.664594037Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:56:56.664598410Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:56:56.664602699Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:56:56.664607036Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:56:56.664612375Z [err]  
+2025-10-22T08:56:56.664616548Z [err]  Node.js v18.20.5
+2025-10-22T08:56:58.452569477Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:56:58.492706739Z [inf]  
+2025-10-22T08:56:58.492713735Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:56:58.492728259Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:56:58.492734705Z [inf]  
+2025-10-22T08:56:59.489009457Z [inf]  ✓ API routes registered
+2025-10-22T08:56:59.489018209Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:56:59.489025511Z [inf]  8:56:59 AM [express] serving on port 8080
+2025-10-22T08:57:01.640067369Z [err]  Node.js v18.20.5
+2025-10-22T08:57:01.640112112Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:01.640119675Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:01.640126811Z [err]           ^
+2025-10-22T08:57:01.640133940Z [err]  
+2025-10-22T08:57:01.640140749Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:01.640148489Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:01.640155379Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:01.640162351Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:01.640168966Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:01.640176949Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:01.640185004Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:01.640192936Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:01.640200405Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:01.640207580Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:01.640214496Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:01.640221011Z [err]  
+2025-10-22T08:57:02.820015711Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:02.858846066Z [inf]  
+2025-10-22T08:57:02.858854080Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:02.858862551Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:02.858870453Z [inf]  
+2025-10-22T08:57:03.659270949Z [inf]  ✓ API routes registered
+2025-10-22T08:57:03.659284511Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:03.679450319Z [inf]  8:57:03 AM [express] serving on port 8080
+2025-10-22T08:57:05.589226950Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:05.589244991Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:05.589283807Z [err]           ^
+2025-10-22T08:57:05.589294451Z [err]  
+2025-10-22T08:57:05.589300125Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:05.589304567Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:05.589309996Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:05.589314338Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:05.589318456Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:05.589323367Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:05.589329065Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:05.589333491Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:05.589339332Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:05.589349015Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:05.589357111Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:05.589362271Z [err]  
+2025-10-22T08:57:05.589366372Z [err]  Node.js v18.20.5
+2025-10-22T08:57:07.537843322Z [inf]  
+2025-10-22T08:57:07.537850804Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:07.537858614Z [inf]  
+2025-10-22T08:57:07.537866045Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:07.537875174Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:07.808801404Z [inf]  ✓ API routes registered
+2025-10-22T08:57:07.808807616Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:07.823115868Z [inf]  8:57:07 AM [express] serving on port 8080
+2025-10-22T08:57:11.529549629Z [err]  Node.js v18.20.5
+2025-10-22T08:57:11.529580859Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:11.529595981Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:11.529605127Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:11.529608474Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:11.529611113Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:11.529619624Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:11.529622035Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:11.529626311Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:11.529637943Z [err]           ^
+2025-10-22T08:57:11.529638159Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:11.529640347Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:11.529647875Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:11.529653590Z [err]  
+2025-10-22T08:57:11.529658231Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:11.529664824Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:11.529671320Z [err]  
+2025-10-22T08:57:13.733557839Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:13.779849740Z [inf]  
+2025-10-22T08:57:13.779856588Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:13.779868122Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:13.779874811Z [inf]  
+2025-10-22T08:57:14.577633879Z [inf]  ✓ API routes registered
+2025-10-22T08:57:14.577640081Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:14.581302013Z [inf]  8:57:14 AM [express] serving on port 8080
+2025-10-22T08:57:16.587965535Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:16.587972650Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:16.589179469Z [err]           ^
+2025-10-22T08:57:16.589193912Z [err]  
+2025-10-22T08:57:16.589202374Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:16.589210308Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:16.589216574Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:16.589223212Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:16.589231887Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:16.589237999Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:16.589243239Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:16.589248949Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:16.589254423Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:16.589291755Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:16.589296613Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:16.589302280Z [err]  
+2025-10-22T08:57:16.589309920Z [err]  Node.js v18.20.5
+2025-10-22T08:57:17.832904948Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:17.866728679Z [inf]  
+2025-10-22T08:57:17.866736085Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:17.866741679Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:17.866747228Z [inf]  
+2025-10-22T08:57:18.560207065Z [inf]  ✓ API routes registered
+2025-10-22T08:57:18.560212876Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:18.593790985Z [inf]  8:57:18 AM [express] serving on port 8080
+2025-10-22T08:57:21.721648366Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:21.721661925Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:21.721662375Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:21.721670475Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:21.721676467Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:21.721686033Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:21.721687504Z [err]  
+2025-10-22T08:57:21.721694186Z [err]           ^
+2025-10-22T08:57:21.721696615Z [err]  Node.js v18.20.5
+2025-10-22T08:57:21.721701175Z [err]  
+2025-10-22T08:57:21.721707436Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:21.721712909Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:21.721718006Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:21.721723376Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:21.721728574Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:21.721733929Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:21.721738748Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:22.935580528Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:22.983648287Z [inf]  
+2025-10-22T08:57:22.983654570Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:22.983660291Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:22.983670438Z [inf]  
+2025-10-22T08:57:23.599798586Z [inf]  ✓ API routes registered
+2025-10-22T08:57:23.599807275Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:23.616002418Z [inf]  8:57:23 AM [express] serving on port 8080
+2025-10-22T08:57:25.740546184Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:25.740554513Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:25.740562289Z [err]           ^
+2025-10-22T08:57:25.740571425Z [err]  
+2025-10-22T08:57:25.740580503Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:25.740590005Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:25.740619322Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:25.740626926Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:25.740635328Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:25.740641833Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:25.740652837Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:25.740660017Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:25.740668168Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:25.740687589Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:25.740696888Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:25.740708810Z [err]  
+2025-10-22T08:57:25.740716299Z [err]  Node.js v18.20.5
+2025-10-22T08:57:26.964037390Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:26.994531149Z [inf]  
+2025-10-22T08:57:26.994538188Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:26.994544644Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:26.994552958Z [inf]  
+2025-10-22T08:57:27.615626688Z [inf]  ✓ API routes registered
+2025-10-22T08:57:27.615637792Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:27.633616709Z [inf]  8:57:27 AM [express] serving on port 8080
+2025-10-22T08:57:29.664802204Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:29.664808320Z [err]  
+2025-10-22T08:57:29.664809007Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:29.664819344Z [err]  Node.js v18.20.5
+2025-10-22T08:57:29.664848014Z [err]           ^
+2025-10-22T08:57:29.664850149Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:29.664857303Z [err]  
+2025-10-22T08:57:29.664860035Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:29.664865441Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:29.664865833Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:29.664870350Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:29.664871655Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:29.664875427Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:29.664877577Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:29.664880167Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:29.664885575Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:29.664892142Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:31.113644957Z [err]  npm warn config production Use `--omit=dev` instead.
+2025-10-22T08:57:31.142515220Z [inf]  
+2025-10-22T08:57:31.142520921Z [inf]  > rest-express@1.0.0 start
+2025-10-22T08:57:31.142526026Z [inf]  > NODE_ENV=production node dist/index.js
+2025-10-22T08:57:31.142530626Z [inf]  
+2025-10-22T08:57:31.892103340Z [inf]  ✓ API routes registered
+2025-10-22T08:57:31.892107977Z [inf]  ✓ WebSocket server initialized
+2025-10-22T08:57:31.903877868Z [inf]  8:57:31 AM [express] serving on port 8080
+2025-10-22T08:57:34.648672159Z [err]  file:///app/node_modules/@neondatabase/serverless/index.mjs:557
+2025-10-22T08:57:34.648679886Z [err]  return w.getRandomValues(y.alloc(r))}function Zo(r){if(r==="sha256")return{update:a(
+2025-10-22T08:57:34.648687101Z [err]           ^
+2025-10-22T08:57:34.648693933Z [err]  
+2025-10-22T08:57:34.648701109Z [err]  TypeError: w.getRandomValues is not a function
+2025-10-22T08:57:34.648706682Z [err]      at Object.randomBytes (file:///app/node_modules/@neondatabase/serverless/index.mjs:557:10)
+2025-10-22T08:57:34.648713351Z [err]      at Object.startSession (file:///app/node_modules/@neondatabase/serverless/index.mjs:738:29)
+2025-10-22T08:57:34.648719923Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1279:21
+2025-10-22T08:57:34.648726214Z [err]      at An._checkPgPass (file:///app/node_modules/@neondatabase/serverless/index.mjs:1274:58)
+2025-10-22T08:57:34.648735856Z [err]      at An._handleAuthSASL (file:///app/node_modules/@neondatabase/serverless/index.mjs:1278:63)
+2025-10-22T08:57:34.648742030Z [err]      at fn.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:34.648747102Z [err]      at file:///app/node_modules/@neondatabase/serverless/index.mjs:1212:29
+2025-10-22T08:57:34.648752515Z [err]      at cn.parse (file:///app/node_modules/@neondatabase/serverless/index.mjs:1127:71)
+2025-10-22T08:57:34.648759165Z [err]      at v.<anonymous> (file:///app/node_modules/@neondatabase/serverless/index.mjs:1190:16)
+2025-10-22T08:57:34.648766815Z [err]      at v.emit (file:///app/node_modules/@neondatabase/serverless/index.mjs:397:12)
+2025-10-22T08:57:34.648774360Z [err]  
+2025-10-22T08:57:34.648781743Z [err]  Node.js v18.20.5

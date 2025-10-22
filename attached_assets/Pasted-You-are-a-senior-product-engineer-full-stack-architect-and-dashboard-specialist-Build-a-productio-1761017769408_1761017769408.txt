@@ -1,0 +1,145 @@
+You are a senior product engineer, full-stack architect, and dashboard specialist. Build a production-grade, configuration-driven web app called “Drosera Studio” that visualizes and monitors on-chain traps and related events. The entire app must be driven by configuration screens. No hard-coded pages. An 18-year-old operator should be able to add pages, components, data sources, alerts, and roles from the admin UI without touching code.
+
+## 0) Outcomes
+- A sleek, modern, future-ready dashboard with human-crafted design, subtle animations, and fluid motion.
+- A full Admin Configuration area that controls navigation, pages, components, data mappings, roles, and alerts.
+- A live trap feed, charts, search, filtering, and status views.
+- Zero code changes needed to add a new page or data view. Configuration only.
+- Clean code, typed end to end, test-covered, and documented.
+
+## 1) Tech Stack
+- Framework: Next.js 15 (App Router, Server Actions), TypeScript, React 19.
+- Styling: Tailwind CSS + CSS variables. Create a bespoke design system. Do not use generic AI boilerplate. No template look.
+- UI Library: Build custom components using headless primitives only. You may use radix-ui primitives for accessibility but design all surfaces and motion yourself.
+- Motion: Framer Motion for micro-interactions and transitions. Use spring physics for page transitions, chart reveals, hover states, and focus rings.
+- Charts: Apache ECharts with canvas rendering. Add live streaming series for event counts and triggered versus dormant traps.
+- State: Server Components + React Query for client queries that need polling or websockets.
+- Data: PostgreSQL via Drizzle ORM. Include schema and seed scripts.
+- Chain access: viem + ethers for ABI events. Abstract provider selection so the operator can add endpoints in the Admin Integrations screen.
+- Realtime: WebSocket or SSE stream for trap events. Fallback to short polling.
+- Auth: NextAuth with Email Magic Link and Wallet Connect support. Roles: admin, operator, viewer.
+- Notifications: Discord webhooks and Telegram bots configurable in Admin. Add Email via Resend as optional.
+- Deployment: Vercel for frontend. Lightweight Node service acceptable on the same repo for indexing worker via edge-compatible cron if possible. Provide Dockerfile for portability.
+- Quality: ESLint, Prettier, Zod validation on all inputs, Playwright E2E, Vitest unit tests, GitHub Actions CI.
+
+## 2) Information Architecture
+### Public
+- Landing: Purpose, live counters, recent activity ticker, call to action to view demo dashboard, documentation link.
+
+### Authenticated App
+- Global navigation renders from config. No hard-coded routes.
+
+#### Admin: Configuration (the heart of the app)
+Build full CRUD screens with inline help text and preview panes.
+1) Menus
+   - Fields: name, route, icon, order, roles.
+   - Drag to reorder. Toggle visibility per role.
+
+2) Pages
+   - Fields: page_id, title, route, description, layout spec, allowed roles.
+   - Layout builder with grid. Add sections and components by selecting from a component library.
+   - Live preview updates as admin edits JSON spec.
+
+3) Components Library
+   - Component types: CounterCard, TimeseriesChart, DonutChart, Table, EventFeed, KPIGrid, NetworkMap, Markdown, StatWithDelta, Sparkline, StatusPills, CodeBlock, JSONViewer, EmptyState.
+   - For each component store: data_source_id, field mapping, transform pipeline, refresh mode (push, poll, static), time window, thresholds, and alert bindings.
+   - Each component supports theme tokens, density, corner radius, elevation, shadow, and motion profile.
+
+4) Data Sources
+   - Types: On-chain Events, REST, GraphQL, SQL, Static JSON.
+   - On-chain events config: chain, RPC endpoint label, contract address, ABI event signature, field extraction map, confirmation depth, dedup rules.
+   - REST config: base URL, auth headers, query params, response mapping with JSONPath.
+   - Test connection button with inline result sample.
+
+5) Traps Dictionary
+   - Define trap types and semantic fields. Example: security, liquidity, governance.
+   - Store: name, description, expected event signatures, severity, default thresholds, remediation hints.
+
+6) Alerts
+   - Triggers: event frequency threshold, match condition, anomaly score, status change, SLA breach.
+   - Actions: Discord webhook, Telegram, Email, Webhook POST.
+   - Templating: mustache variables with event payload fields.
+   - Quiet hours, dedup intervals, and rate limits.
+
+7) Roles and Access
+   - Create roles and assign granular permissions to menus, pages, components, and data sources.
+
+8) Integrations
+   - RPC endpoints, indexer settings, notification credentials, analytics opt-in.
+   - Switch default provider per chain without redeploy.
+
+9) Appearance
+   - Theme editor with tokens for color, typography scale, spacing, radius, elevation, and motion durations.
+   - Light and Dark. High contrast option. Respect prefers-reduced-motion.
+
+10) Import and Export
+   - Export full configuration as signed JSON.
+   - Import with dry-run diff and rollback support.
+   - Versioning with labeled snapshots and restore points.
+
+#### Operator: Live Dashboard
+- “Overview” page with KPI grid: total traps, active chains, triggered today, average time to respond, alert volume.
+- Timeseries chart of trap events by severity and type.
+- Triggered vs Dormant cards with mini sparklines.
+- Event Feed with streaming updates, filter by chain, type, contract, severity.
+- Table with advanced filters, column chooser, pinned columns, CSV export.
+- Detail drawer for any event with decoded parameters, linked transactions, and chain explorer links.
+
+#### Explorer
+- Browse by chain, by protocol, by trap type, by status. Dynamic pages generated from config.
+
+#### Runbooks
+- Markdown pages for playbooks that operators can attach to trap types. Inline code blocks, callouts, and links.
+
+## 3) Visual and Interaction Design Requirements
+- Style: modern, calm, high craft. Clean typography. Tight rhythm. Generous whitespace where needed. No generic glassmorphism or neon overload.
+- Navigation: left rail with collapse. Secondary context header with breadcrumbs and time range.
+- Motion: page transitions slide-fade with spring. Cards lift on hover with shadow and slight scale. Charts animate in with staged opacity and y-translation. Reduce motion when the OS requests it.
+- Micro-details: focus ring visible and tasteful, keyboard shortcuts for search g then s, quick add q, help ?.
+- Density control: comfy and compact modes selectable in the header.
+- Empty states: hand-crafted illustrations or minimal geometric motifs. Provide helpful setup CTAs.
+
+## 4) Data and Indexing
+- Provide a small Node worker in the repo named “indexer” that subscribes to configured on-chain event sources. Store normalized rows to Postgres tables: trap_events, trap_status, protocols, contracts.
+- Debounce duplicate events, include block timestamp and tx hash, include chain id, contract address, parsed fields.
+- Seed script generates demo data so the app is fully functional without live providers.
+
+## 5) Database Schema (Drizzle)
+- users, sessions, roles, user_roles.
+- menu_config, page_config, component_config, data_sources, trap_types, alert_rules, alert_deliveries, integrations, appearance_tokens, config_versions.
+- trap_events, trap_status, protocols, contracts, runbooks.
+- Provide migrations and seeds. Include RLS policies if using Supabase.
+
+## 6) Developer Experience
+- Scripts: dev, build, lint, test, e2e, seed, generate-types, export-config, import-config.
+- Docs: a /docs route with setup steps, architecture diagrams, and how to add a page from the Admin UI with screenshots.
+- Add a “Demo Mode” toggle that hides credentials and injects mock data.
+
+## 7) Accessibility and Performance
+- WCAG AA target. Test with keyboard only. Visible skip links. aria-live region for event feed.
+- Performance budgets: LCP under 2.5s on 4G. Ship only required fonts. Preload key routes. Avoid layout shift. Lazy load charts.
+- SEO for public pages. PWA manifest and offline shell for dashboard chrome.
+
+## 8) Sample Configs to Preload
+- Menus: Overview, Explorer, Alerts, Runbooks, Admin.
+- Overview Page Layout:
+  - Row 1: Four KPI CounterCards.
+  - Row 2: TimeseriesChart of events by severity, DonutChart of trap types.
+  - Row 3: EventFeed left two-thirds, Status Table right one-third.
+- Data Source examples: one on-chain source, one REST, one static JSON.
+
+## 9) Non-Negotiables
+- Everything configurable in Admin. No code edits needed for new pages or components.
+- Clean, original visuals. Take cues from high-craft dashboards that favor clarity, speed, and restraint. Avoid the “AI template” look.
+- Provide robust test coverage for configuration parsing, role checks, and alert triggers.
+- Deliver a working repository with README, env examples, migrations, seeds, and step-by-step setup.
+
+Build the project now. When finished, output:
+1) Repo tree.
+2) All environment variables and defaults.
+3) SQL schema and seed preview.
+4) Example exported configuration JSON.
+5) Commands to run locally and deploy to Vercel.
+6) A walkthrough that adds a new live page using only the Admin UI.
+
+Focus on precision, craft, and reliability. Do not substitute generic components. Create a distinctive visual language that feels premium yet purposeful.
